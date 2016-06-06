@@ -3491,10 +3491,10 @@ a.fancybox {
 .pagination-bar {
   height: auto;
   width: 100%;
-  height: 60px; }
+  height: 30px; }
   .pagination-bar .pagination {
-    height: 60px;
-    line-height: 60px;
+    height: 30px;
+    line-height: 30px;
     display: block;
     list-style: none;
     padding: 0 10px;
@@ -3508,8 +3508,14 @@ a.fancybox {
       font-size: 1.3rem;
       color: #9eabb3; }
 
-.pagination-bar .pagination-number {
-  color: #333; }
+.pagination-bar .pagination {
+  margin-top: 10px;
+  line-height: 20px; }
+  .pagination-bar .pagination .pagination-number {
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    color: #777; }
 
 .post {
   position: relative;
