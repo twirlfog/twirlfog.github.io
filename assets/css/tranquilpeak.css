@@ -1381,10 +1381,11 @@ a.fancybox {
   margin-top: 10px;
   line-height: 20px; }
   .pagination-bar .pagination .pagination-number {
-    color: #333;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 3px;
-    color: #777; }
+    color: #555;
+    padding: 3px 10px;
+    box-shadow: 0 0 10px white; }
 
 .post {
   position: relative;
