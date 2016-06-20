@@ -1315,6 +1315,18 @@ a.fancybox {
   padding-right: 20px;
   padding-left: 20px; }
 
+.main-content-wrap {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  color: #555;
+  padding: 3px 10px;
+  box-shadow: 0 0 10px white;
+  display: block;
+  max-width: 750px;
+  margin: 10px auto;
+  padding-right: 20px;
+  padding-left: 20px; }
+
 @media only screen and (min-width: 1024px) {
   .markdown h1 {
     font-size: 3rem; }
@@ -1442,10 +1454,6 @@ a.fancybox {
   .post-content {
     font-size: 1.7rem; } }
 
-.post {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding-top: 20px; }
-
 .post-actions-wrap {
   height: 60px;
   padding: 0;
@@ -1526,7 +1534,6 @@ a.fancybox {
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000; }
   .post-header-cover .post-header {
-    display: table-cell;
     vertical-align: middle; }
     .post-header-cover .post-header .post-title {
       max-width: 750px;
@@ -1622,6 +1629,14 @@ a.fancybox {
       -moz-transform: translate3d(75px, 0, 0);
       transform: translate3d(75px, 0, 0); } }
 
+.post-header-cover .post-header .post-title {
+  color: #aaa; }
+
+.post-header-cover .post-header .post-meta {
+  color: #aaa !important; }
+  .post-header-cover .post-header .post-meta a {
+    color: #aaa; }
+
 .postShorten-group .postShorten {
   margin-top: 15px;
   border-bottom: 1px solid #eef2f8; }
@@ -1631,6 +1646,8 @@ a.fancybox {
   width: 100%;
   display: inline-block;
   vertical-align: top; }
+  .postShorten .postShorten-thumbnailimg {
+    overflow: hidden; }
   .postShorten .postShorten-header .postShorten-title {
     margin: 0;
     word-break: initial;
@@ -1704,9 +1721,13 @@ a.fancybox {
   .postShorten.postShorten--thumbnailimg-left .postShorten-wrap {
     float: right;
     width: calc(100% - 140px - 20px); }
+  .postShorten.postShorten--thumbnailimg-top .postShorten-thumbnailimg {
+    margin-top: 5px; }
   .postShorten.postShorten--thumbnailimg-bottom .postShorten-wrap {
     display: block;
     width: 100%; }
+  .postShorten.postShorten--thumbnailimg-bottom .postShorten-excerpt > p {
+    margin-bottom: 0; }
   .postShorten.postShorten--thumbnailimg-bottom .postShorten-thumbnailimg {
     display: block;
     width: 100%;
@@ -1719,8 +1740,9 @@ a.fancybox {
 .postShorten-group .postShorten {
   width: calc(100% - 30px);
   padding: 15px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 5px; }
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  box-shadow: 0 0 10px #aaa; }
 
 .share-options-bar {
   position: fixed;
