@@ -1,0 +1,11 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" aria-labelledby="title desc">
+	<title id="title">coffee</title>
+	<desc id="desc"></desc>
+	<symbol id="half">
+		<path style="fill:#804736;stroke:#804736;" d="m 20,40 c 4.3,3.8 12,-3.2 14.5,-12 2.3,-9 -1,-23 -13,-24.4 11,13 -10.9,26 -1.3,36.6 z" />
+	</symbol>
+    <g id="abc">
+        <use xlink:href="#half" />
+		<use xlink:href="#half" transform="rotate(180, 20, 22.4)" />
+    </g>
+</svg>
